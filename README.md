@@ -8,7 +8,6 @@ Queremos que você nos apresente uma aplicação que realize o CRUD de 3 entidad
 - A aplicação deve ser composta por Backend e/ou Frontend. Caso ache que so vai conseguir fazer um dos dois no tempo disponível, foque nele.
 - O Backend deve prover uma [API REST](https://pt.wikipedia.org/wiki/REST)
 - Você deve cumprir no mínimo os requisitos abaixo.
-- Items marcados com (+) não são obrigatórios, mas servem como diferencial.
 - Nas instruções para execução da aplicação é essêncial conter o seu nome e email.
 
 ## REQUISITOS

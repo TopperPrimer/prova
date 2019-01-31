@@ -10,7 +10,7 @@
 <body>
 <!--Menu-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Top Prime</a>
+        <a class="navbar-brand" href="/">Top Prime</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,26 +23,26 @@
                     Empresa
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Adicionar</a>
-                    <a class="dropdown-item" href="#">Listar</a>
-                </li>
-                <!--Membro-->
+                    <a class="dropdown-item" href="empresa/adicionar">Adicionar</a>
+                    <a class="dropdown-item" href="empresa/listar">Listar</a>
+         </a>       </li>
+         li>       <!--Membro-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Membro
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Adicionar</a>
+                    <a class="dropdown-item" href="{{action ('MembroController@formularioMembro')}}">Adicionar</a>
                     <a class="dropdown-item" href="#">Listar</a>
                     </div>
                 </li>
-                <!--Cupom-->
+                <!--Cupom-->    
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Promoção
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Adicionar</a>
+                    <a class="dropdown-item" href="{{action ('PromocaoController@formularioPromocao')}}"">Adicionar</a>
                     <a class="dropdown-item" href="#">Listar</a>
                     </div>
                 </li>

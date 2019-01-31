@@ -2,16 +2,24 @@
 
 class EmpresaController extends Controller{
 
+
     public function adicionarEmpresa(){
     
-    return view('empresa.adicionar');
+        
+    
+    
+    }
 
+    public function formularioEmpresa(){
+
+        return view('empresa.adicionar');
 
     }
 
+
     public function listarEmpresa(){
 
-
+        return view('empresa.listar');
         
     }
 

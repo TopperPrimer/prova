@@ -14,7 +14,11 @@ class CreatePromocaoTable extends Migration
     public function up()
     {
         Schema::create('promocao', function (Blueprint $table) {
-            $table->intIncrements('id');
+            $table->bigIncrements('id');
+            $table->Integer('empresa_id')->unsigned();
+            $table      ->foreign('empresa_id')
+                  ->references('id')
+                  ->on('empresa');        
             $table->string('descricao',200);
             $table->float('valor_desconto');       
             $table->float('percentual');

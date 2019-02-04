@@ -33,6 +33,8 @@ Modificar permissões do index.html
   
 Instalar php7.2: sudo apt install php7.2
 
+Instalar composer: [COMPOSER](https://getcomposer.org/)
+
 Instalar o MYSQL: sudo apt install mysql-serve
 
 Configurando MySQL
@@ -78,6 +80,9 @@ Realizar download do XAMPP: [XAMPP_v7.3.1](https://www.apachefriends.org/xampp-f
   Depois usa instalação: next>next>finish  :)
   
 
+Instalar composer: [COMPOSER](https://getcomposer.org/Composer-Setup.exe)
+
+
 Realizar download do projeto: [PROJETO](https://github.com/leoalves100/prova)->Clone or download
 
 Extrair prova-master.zip
@@ -100,6 +105,8 @@ Importar banco de dados
   
   Depois: 
     mysql -h 127.0.0.1 -u root -p db_topprime < dump_db_topprime.sql
+    
+    OBS: caso peça a senha, digite:0405
     
 ##Após a realização de todas as configurações acima
 

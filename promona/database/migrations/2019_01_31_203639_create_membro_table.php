@@ -16,10 +16,10 @@ class CreateMembroTable extends Migration
         Schema::create('membro', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
             $table->string('primeiro_nome',200);
-            $table->string('sobrenome',200);
-            $table->tinyInteger('ativo');
+            $table->string('sobrenome',200);          
             $table->string('cpf',11);
-            $table->dateTime('data_cadastro');
+            //$table->dateTime('data_cadastro');
+            $table->tinyInteger('ativo');
             $table->timestamps();
         });
     }

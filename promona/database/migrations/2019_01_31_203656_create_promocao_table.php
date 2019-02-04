@@ -15,15 +15,12 @@ class CreatePromocaoTable extends Migration
     {
         Schema::create('promocao', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('empresa_id')->unsigned();
-            $table      ->foreign('empresa_id')
-                  ->references('id')
-                  ->on('empresa');        
+            //$table->Integer('empresa_id')->unsigned();       
             $table->string('descricao',200);
             $table->float('valor_desconto');       
             $table->float('percentual');
             $table->tinyInteger('ativo');
-            $table->dateTime('data_cadastro');
+            //$table->dateTime('data_cadastro');
             $table->timestamps();   
         });
     }

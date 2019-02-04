@@ -15,19 +15,15 @@ class CreateEmpresaTable extends Migration
     {
         Schema::create('empresa', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->Integer('membro_id')->unsigned();
+            //$table->Integer('membro_id')->unsigned();
             $table->string('razao_social',200);
             $table->string('nome_fantasia',200);       
             $table->string('cnpj',20);
-            $table->tinyInteger('ativo');
+            $table->string('ativo',1);
             $table->string('nome_responsavel',200);
             $table->timestamps();
         });
 
-
-    Schema::table('empresa', function($table) {
-        $table->foreign('membro_id')->references('id')->on('membro');
-    });
     }
 
     /**

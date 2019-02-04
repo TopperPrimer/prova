@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"  href="/css/app.css"/>
+    <link rel="stylesheet"  href="/css/fontawesome-free-5.6.3-web/css/all.css"/>
+    <link rel="stylesheet"  href="/css/style.css"/>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1000px-Circle-icons-computer.svg.png" type="image/x-icon"/>
     <script src="/js/app.js"></script>
 </head>
 <body>
@@ -23,17 +26,17 @@
                     Empresa
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="empresa/adicionar">Adicionar</a>
-                    <a class="dropdown-item" href="empresa/listar">Listar</a>
+                    <a class="dropdown-item" href="{{ action ('EmpresaController@formularioEmpresa')}}">Adicionar</a>
+                    <a class="dropdown-item" href="{{ action ('EmpresaController@listarEmpresa')}}">Listar</a>
          </a>       </li>
-         li>       <!--Membro-->
+                <!--Membro-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Membro
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{action ('MembroController@formularioMembro')}}">Adicionar</a>
-                    <a class="dropdown-item" href="#">Listar</a>
+                    <a class="dropdown-item" href="{{action ('MembroController@listarMembro')}}">Listar</a>
                     </div>
                 </li>
                 <!--Cupom-->    
@@ -42,8 +45,8 @@
                     Promoção
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{action ('PromocaoController@formularioPromocao')}}"">Adicionar</a>
-                    <a class="dropdown-item" href="#">Listar</a>
+                    <a class="dropdown-item" href="{{action ('PromocaoController@formularioPromocao')}}">Adicionar</a>
+                    <a class="dropdown-item" href="{{action ('PromocaoController@listarPromocao')}}">Listar</a>
                     </div>
                 </li>
             </ul>

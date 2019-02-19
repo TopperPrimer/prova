@@ -1,8 +1,7 @@
-# Promona
+# Software: **Promona**
 
-## CRUD das entidades: Empresa, Promoção e Membro
+**CRUD das entidades: Empresa, Promoção e Membro**
 
-## Instalação
 
 # Linux
 

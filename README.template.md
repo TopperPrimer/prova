@@ -55,7 +55,7 @@ $ sudo apt install apache2
 ```
 &nbsp;
 
-### Instale o [COMPOSER](https://getcomposer.org/download/)
+## Instale o [COMPOSER](https://getcomposer.org/download/)
 
 &nbsp;
 
